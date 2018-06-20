@@ -1,2 +1,3 @@
-mixin button(href, text)
-	a.button(href=href)&attributes(attributes)= text
+mixin button(href, text, style)
+	- style = style || 'gray'
+	a.button(href=href class="button_col-#{style}")&attributes(attributes)= text

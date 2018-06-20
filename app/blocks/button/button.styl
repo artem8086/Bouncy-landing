@@ -1,13 +1,29 @@
 .button
 	display inline-block
-	border 1px solid gray-color
+	border-width 1px
+	border-style solid
 	border-radius 18px
 	font-size 16px
-	line-height 12px
-	color gray-color
-	padding 12px 30px
+	line-height 36px
+	padding 0 30px
+	transition color .3s ease-in-out, background-color .3s ease-in-out
+	
+	&_col-gray
+		border-color gray-color
+		color gray-color
+		
+		&:hover
+			background-color gray-color
+			color main-color
+
+	&_col-white
+		border-color main-color
+		color main-color
+		
+		&:hover
+			background-color main-color
+			color gray-color
 
 	&:hover
 		text-decoration none
-		background-color gray-color
-		color main-color
+		

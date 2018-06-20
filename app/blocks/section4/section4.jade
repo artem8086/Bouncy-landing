@@ -1,0 +1,20 @@
++b.SECTION.section4
+	.container-fluid
+		.row
+			+b.sec4-image.col-12.col-sm-6
+				img(src="assets/images/section4_1.png")
+				+e.SPAN.text Some Text
+			+b.sec4-image_overlay.col-6.col-sm-3
+				img(src="assets/images/section4_2.png")
+				+e.SPAN.text VINTAGE
+			+b.sec4-image_overlay.col-6.col-sm-3
+				img(src="assets/images/section4_3.png")
+				+e.SPAN.text Branding
+
+	+b.sec4-footer
+		.container
+			.row
+				+e.SPAN.text.col-10.col-md-9.align-items-center.offset-1.offset-md-0.
+					At vero eos et #[strong accusamus] et iusto odio dignissimos ducimus qui blanditiis praesentium
+				.d-flex.justify-content-center.justify-content-md-start
+					+button("#", "Submit Now", "white")
