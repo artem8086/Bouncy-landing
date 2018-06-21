@@ -1,3 +1,5 @@
+include ../perc-progress-bar/perc-progress-bar
+
 +b.SECTION.section5.d-flex
 	.container.d-flex.flex-column
 		.row.justify-content-center
@@ -5,19 +7,21 @@
 			+e.SPAN.desc.col-10.col-sm-6.col-lg-5.
 				At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
 
-		.row
-			+b.sec5-icons.col-2
+		.row.justify-content-center.justify-content-sm-start
+			+b.sec5-icons.col-4.col-md-2.p-0
 				+e.I.icon 
 				+e.I.icon_active 
 				+e.I.icon 
 				+e.I.icon 
 
-			.col-4.p-0
+			.col-8.col-md-10.col-xl-4.p-0
 				+e.H2.header2 Graphic Design
 				+e.SPAN.desc2.
 					At vero eos et accusamus et #[strong.col-green iusto] odio dignissimos #[strong.col-gray ducimus] qui blanditiis praesentium voluptatum deleniti
 				+e.SPAN.desc3.
 					quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, #[strong.col-green similique sunt] in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
 
-			.col-6.p-0.container-fluid
-				.row
+			+b.sec5-diagrams.col-10.offset-1.offset-xl-0.col-xl-6.d-flex.flex-column.flex-sm-row.align-items-center.justify-content-between
+				+perc-progress-bar("Branding", 80)
+				+perc-progress-bar("Web Design", 75)
+				+perc-progress-bar("UI/UX", 60)

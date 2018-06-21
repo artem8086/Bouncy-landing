@@ -1,0 +1,41 @@
+.perc-progress-bar
+	padding 12px 0
+
+	&__title
+		display inline-block
+		width 100%
+		text-align center
+		font-family Roboto
+		font-size 16px
+		font-weight 300
+		letter-spacing 0.8px
+		color #81868e
+
+.perc-circle
+	padding-bottom 25px
+	position relative
+	text-align center
+
+	&__percent
+		display inline
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		line-height 120px
+		font-size 25px
+		letter-spacing 1.25px
+		color #81868e
+	
+		&::after
+			display inline
+			content '%'
+			color #81868e
+			line-height 120px
+			font-size 14px
+			letter-spacing 0.7px
+
+.c-percent
+	&__progress
+		transition stroke-dashoffset 3s ease-in-out

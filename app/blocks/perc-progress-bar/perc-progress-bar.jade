@@ -1,0 +1,9 @@
+mixin perc-progress-bar(title, percent)
+	+b.perc-progress-bar(data-percent=percent)&attributes(attributes)
+		+b.perc-circle
+			+b.SVG.c-percent(width=120 height=120 viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+				circle(cx=60 cy=60 r=58 stroke="#047378" stroke-width=3 fill="none")
+				+e.PATH.progress(d="M60,2a58,58 0 1,0 0,116a58,58 0 1,0 0,-116" stroke="#19bd9a" stroke-width=3 fill="none" stroke-dasharray=365 stroke-dashoffset=365 stroke-linecap="round")
+			+e.SPAN.percent=percent
+
+		+e.SPAN.title=title
