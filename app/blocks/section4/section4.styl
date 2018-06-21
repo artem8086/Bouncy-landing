@@ -1,42 +1,42 @@
 .sec4-image
-		position relative
-		padding 0
+	position relative
+	padding 0
+	
+	img
+		width 100%
+		height 100%
+
+	&__text
+		display none
+		position absolute
+		justify-content center
+		align-items center
+		color main-color
+		font-family "Source Sans Pro"
+		font-size 20px
+		font-weight 300
+		letter-spacing 4px
+		text-transform uppercase
+		width 100%
+		height 100%
+		left 0
+		top 0
+
+	&_overlay
 		
-		img
-			width 100%
-			height 100%
+		&>.sec4-image__text
+			display inline-flex
 
-		&__text
-			display none
+		&::before
 			position absolute
-			justify-content center
-			align-items center
-			color main-color
-			font-family "Source Sans Pro"
-			font-size 20px
-			font-weight 300
-			letter-spacing 4px
-			text-transform uppercase
+			display block
+			content ''
 			width 100%
 			height 100%
-			left 0
 			top 0
-
-		&_overlay
-			
-			&>.sec4-image__text
-				display inline-flex
-
-			&::before
-				position absolute
-				display block
-				content ''
-				width 100%
-				height 100%
-				top 0
-				left 0
-				background-color #222
-				opacity .85
+			left 0
+			background-color #222
+			opacity .85
 
 .sec4-footer
 	padding 38px 0
@@ -46,6 +46,7 @@
 	background-position center
 
 	&__text
+		padding 0
 		line-height 36px
 		color main-color
 		letter-spacing .8px
