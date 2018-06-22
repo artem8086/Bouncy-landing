@@ -1,16 +1,21 @@
 +b.HEADER.main-head.d-flex(style="background-image: url(assets/images/header-bg.png)")
 	.container.d-flex.flex-column
 		+b.top-line.row
-			+e.logo.offset-1.offset-md-0.col-md-3.col-lg-4.col-xl-6 Bouncy
+			+e.logo.offset-1.offset-md-0.col-5.col-md-3.col-lg-4.col-xl-6.p-0 Bouncy
 
-			+b.top-nav.d-none.d-md-block.col-md-9.col-lg-8.col-xl-6
-				+e.A.link_active(href="#") Hello
-				+e.A.link(href="#") About
-				+e.A.link(href="#") Services
-				+e.A.link(href="#") Portfolio
-				+e.A.link(href="#") Team
-				+e.A.link(href="#") Blog
-				+e.A.link(href="#") Contact
+			+b.top-nav.col-6.col-md-9.col-lg-8.col-xl-6.p-0
+				input#top-nav__toggle(type="checkbox")
+				+b.LABEL.toggle-container(for="top-nav__toggle")
+					+e.SPAN.button
+
+				+b.main-nav
+					+e.A.link_active(href="#") Hello
+					+e.A.link(href="#") About
+					+e.A.link(href="#") Services
+					+e.A.link(href="#") Portfolio
+					+e.A.link(href="#") Team
+					+e.A.link(href="#") Blog
+					+e.A.link(href="#") Contact
 
 		+b.main-content.row.m-auto.justify-content-center
 			+e.H1.header-text.col-12 We Are Code Cafe
