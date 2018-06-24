@@ -1,10 +1,4 @@
+import 'jquery';
+import 'jQuery-viewport-checker/dist/jquery.viewportchecker.min';
 
-/*import svg4everybody from 'svg4everybody';
-import $ from 'jquery';
-
-$(() => {
-	svg4everybody();
-});*/
-
-
-import section5 from '../blocks/section5/section5'
+import '../blocks/section5/section5';
