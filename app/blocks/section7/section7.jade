@@ -1,3 +1,5 @@
+include /blocks/button/button
+
 +b.SECTOIN.section7.d-flex
 	.container.d-flex.flex-column
 		.row.justify-content-center
@@ -28,3 +30,10 @@
 							- }
 					- }
 			- }
+
+		+b.sec7-footer
+			.row
+				+e.SPAN.text.col-10.offset-1.
+					At vero eos et #[strong accusamus] et iusto odio #[strong dignissimos] ducimus qui blanditiis
+			.row.justify-content-center
+				+button("#", "Start Project", "white")
