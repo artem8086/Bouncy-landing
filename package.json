@@ -102,6 +102,7 @@
     "jade-get-data": "^1.0.0",
     "jade-injected": "^1.0.2",
     "jquery": "^2.1.4",
+    "jquery-migrate": "^3.0.1",
     "merge-stream": "^1.0.0",
     "node-notifier": "^4.3.1",
     "npm-install-webpack-plugin": "^2.0.2",
@@ -111,6 +112,7 @@
     "rimraf": "^2.5.0",
     "run-sequence": "^1.2.2",
     "rupture": "^0.6.1",
+    "slick": "^1.12.2",
     "source-map-loader": "^0.1.5",
     "spritesmith-dir-checker": "^1.0.0",
     "spritesmith-stylus-retina-template": "^1.0.0",
@@ -125,6 +127,7 @@
     "webpack-stream": "^3.1.0"
   },
   "dependencies": {
-    "jQuery-viewport-checker": "git+https://github.com/dirkgroenen/jQuery-viewport-checker.git"
+    "jQuery-viewport-checker": "git+https://github.com/dirkgroenen/jQuery-viewport-checker.git",
+    "slick-carousel": "git+https://github.com/kenwheeler/slick.git"
   }
 }

@@ -1,4 +1,3 @@
-import $ from 'jquery';
 import setPercentAnimation from '../perc-progress-bar/perc-progress-bar';
 
 $(document).ready(function () {

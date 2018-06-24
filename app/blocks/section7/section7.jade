@@ -1,0 +1,30 @@
++b.SECTOIN.section7.d-flex
+	.container.d-flex.flex-column
+		.row.justify-content-center
+			+e.H2.header.col-12 THE PORTFOLIO
+			+e.SPAN.desc.col-10.col-sm-6.col-lg-5.
+				At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+
+		+b.sec7-selector.row
+		+b.sec7-slider.row.justify-content-center
+			- const PAGES = ["All Works", "Print", "Identity", "Branding", "Web", "HTML", "Wordpress"]
+			- const PAGE_NUM = 7;
+			- for (let page = 0; page < PAGE_NUM; page++) {
+			+b.sec7-page.container-fluid(page-name=PAGES[page])
+				.row.justify-content-center
+					- for (var j = 0; j < 12; j += 3) {
+						div(class=j==9 ? 'd-lg-none d-xl-block' : '')
+							- for (var i = 0; i < 3; i++) {
+								+b.sec7-img
+									img(src="assets/images/sec7-slider/image" + (j+i+1) + ".png")
+									+b.sec7-img-hover
+										.m-auto
+											+e.title TITLE HERE
+											+e.SPAN.desc.
+												At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+										div
+											+e.A.button(href="#") 
+											+e.A.button(href="#") 
+							- }
+					- }
+			- }

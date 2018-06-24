@@ -1,0 +1,141 @@
+.section7
+	background-color #f3f3f3
+	padding 80px 0 136px
+
+	&__header
+		text-align center
+		font-size 20px
+		padding-bottom 40px
+
+	&__desc
+		text-align center
+		padding-bottom 80px
+
+.sec7-img
+	position relative
+	margin 5px 5px
+
+	&::after
+		content ""
+		visibility hidden
+		display block
+		position absolute
+		left 0
+		bottom 0
+		width 100%
+		height 100%
+		background-color #000
+		transition all 0.4s ease-in-out
+		opacity 0
+
+	&:first-child
+		padding-top 0
+	
+	&last-child
+		padding-bottom 0
+
+	&-hover
+		display flex
+		z-index 2
+		flex-direction column
+		visibility hidden
+		padding 0 40px
+		position absolute
+		left 0
+		top 0
+		width 100%
+		height 100%
+		transition all 0.25s ease-in-out
+		transform-origin center
+		transform scale(0.1, 0.1)
+	
+		&__title
+			margin-bottom 52px
+			position relative
+			color #19bd9a
+			font-family "Source Sans Pro"
+			font-size 28px
+			font-weight 300
+			text-transform uppercase
+			letter-spacing 4px
+			
+			&::before
+				content ""
+				display block
+				position absolute
+				left 0
+				bottom -20px
+				width 23px
+				border-bottom 1px solid #19bd9a
+
+		&__desc
+			color #b2b3b3
+			font-size 12px
+			letter-spacing 0.6px
+		
+		&__button
+			display inline-block
+			font-family "Pe-icon-7-stroke"
+			margin 0 6px 25% 0
+			font-size 15px
+			line-height 28px
+			text-align center
+			color main-color
+			width 29px
+			height 28px
+			background-color #000
+			border-radius 50%
+			
+			&:hover
+				color main-color
+				text-decoration none
+
+	&:hover
+		&::after
+			visibility visible
+			opacity 0.8
+
+		.sec7-img-hover
+			visibility visible
+			transform scale(1, 1)
+			
+
+
+.sec7-slider__paging
+	text-align center
+	li
+		position relative
+		display inline-block
+		padding 10px
+		
+		&::before
+			content ""
+			display block
+			position absolute
+			left 50%
+			bottom 0px
+			width 0%
+			visibility hidden
+			border-bottom 2px solid #19bd9a
+			transition all 0.25s ease-in-out
+
+		&.slick-active::before
+			left calc(50% - 18px)
+			width 36px
+			visibility visible
+
+.sec7-selector
+	justify-content center
+	padding-bottom 60px
+
+	&__button
+		display inline-block
+		padding 0 10px
+		font-size 16px
+		color #464646
+
+		&:hover
+			cursor pointer
+			text-decoration none
+			color gray-color
+
