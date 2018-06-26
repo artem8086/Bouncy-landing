@@ -1,0 +1,20 @@
++b.SECTOIN.section9.d-flex
+	.container.d-flex.flex-column
+		.row.justify-content-center
+			+e.H2.header.col-12 Testimonials
+			+e.SPAN.desc.col-10.col-sm-6.col-lg-5.
+				At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+
+			+b.sec9-slider.slider.col-12
+				- const PAGE_NUM = 3;
+				- for (var page = 0; page < PAGE_NUM; page++) {
+				+b.sec9-page.container-fluid
+					.row
+						.col-12.col-sm-3.col-lg-2.offset-sm-1.p-0.justify-content-center.justify-content-sm-start.d-flex
+							+e.IMG.ava(src="assets/images/sec9-slider/avatar1.png")
+						+e.desc.col-10.col-sm-7.col-lg-8.offset-1.offset-sm-0.
+								At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.
+						.col-10.col-lg-8.offset-1.offset-lg-3
+							+e.name PARTHO
+							+e.role FOUNDER, ARTWAYS BD
+				- }

@@ -6,6 +6,8 @@ $(document).ready(function () {
 	});
 
 	$('.sec8-info').mCustomScrollbar({
-		alwaysShowScrollbar: 2
+		alwaysShowScrollbar: 2,
+		autoHideScrollbar: false,
+		theme: 'green'
 	});
 });
