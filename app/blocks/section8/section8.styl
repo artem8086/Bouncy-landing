@@ -12,14 +12,16 @@
 
 .sec8-page
 	&__photo
+		min-width 75%
 		max-width 100%
 
-.sec8-person
-	margin-top 30px
-	padding-right 47px
-	border-right 4px solid #19bd9a
+.sec8-info
+	text-align right
+	padding 32px 47px 0 0
+	max-height 364px
+	overflow auto
 
-	&__name
+	&__full-name
 		color #464646
 		font-size 20px
 		letter-spacing .8px
@@ -34,44 +36,20 @@
 		text-transform uppercase
 		letter-spacing 1.4px
 
-.sec8-info
-	text-align right
-
 	&__desc
-		padding 32px 47px 0 0
 		color #81868e
 		text-align right
 		font-size 14px
 
 .sec8-diagrams
 	width 100%
-	padding 48px 47px 0 53px
+	padding 48px 0 0 21px
 
 .progress-diagramm
 	margin-bottom 36px
 
-.slider
+.sec8-slider
 	padding-bottom 100px
-
-	&__paging
-		padding-top 61px
-		display flex
-		justify-content center
-		margin 0
-
-		li
-			display inline-block
-
-			&.slick-active .slider__button
-				background-color #19bd9a
-
-	&__button
-		display inline-block
-		margin 0 5px
-		width 10px
-		height 10px
-		border-radius 50%
-		border 1px solid #19bd9a
 
 .sec8-footer
 	padding 58px 0
