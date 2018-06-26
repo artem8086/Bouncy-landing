@@ -9,9 +9,8 @@ include /blocks/button/button
 
 		+b.sec7-selector.row
 		+b.sec7-slider.row.justify-content-center
-			- const PAGES = ["All Works", "Print", "Identity", "Branding", "Web", "HTML", "Wordpress"]
-			- const PAGE_NUM = 7;
-			- for (let page = 0; page < PAGE_NUM; page++) {
+			- const PAGES = ["All Works", "Print", "Identity", "Branding", "Web", "HTML", "Wordpress"];
+			- for (let page = 0; page < PAGES.length; page++) {
 			+b.sec7-page.container-fluid(page-name=PAGES[page])
 				.row.justify-content-center
 					- for (var j = 0; j < 12; j += 3) {

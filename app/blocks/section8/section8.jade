@@ -1,0 +1,37 @@
+include ../progress-diagramm/progress-diagramm
+
++b.SECTOIN.section8
+	.container.d-flex.flex-column
+		.row.justify-content-center
+			+e.H2.header.col-12 THE TEAM
+			+e.SPAN.desc.col-10.col-sm-6.col-lg-5.
+				At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+
+		+b.sec8-slider.row
+			- const PAGE_NUM = 3;
+			- for (var page = 0; page < PAGE_NUM; page++) {
+			+b.sec8-page.container-fluid
+				.row
+					.col-3.p-0
+						+e.IMG.photo(src="assets/images/sec8-slider/photo1.png")
+					+b.sec8-info.offset-3.col-6
+						+b.sec8-person
+							+e.name Abdullah Noman
+							+e.role Creative Director, Code Cafe
+
+						+e.desc.
+							At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+						
+						+b.sec8-diagrams
+							+progress-diagramm("BRANDING", 80)
+							+progress-diagramm("Web Design", 65)
+							+progress-diagramm("User Interface", 75)
+
+			- }
+	+b.sec8-footer.contaiber-fluid
+		.container.d-flex.flex-column
+			.row
+				+e.SPAN.text.col-10.offset-1.
+					Already Loved Us? Let’s talk!
+			.row.justify-content-center
+				+button("#", "Contact Us", "white")
