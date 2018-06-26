@@ -7,14 +7,14 @@ include ../progress-diagramm/progress-diagramm
 			+e.SPAN.desc.col-10.col-sm-6.col-lg-5.
 				At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
 
-		+b.sec8-slider.row
+		+b.slider.row
 			- const PAGE_NUM = 3;
 			- for (var page = 0; page < PAGE_NUM; page++) {
 			+b.sec8-page.container-fluid
 				.row
-					.col-3.p-0
+					.col-12.col-md-5.col-lg-4.col-xl-3.p-0.justify-content-center.justify-content-md-start.d-flex
 						+e.IMG.photo(src="assets/images/sec8-slider/photo1.png")
-					+b.sec8-info.offset-3.col-6
+					+b.sec8-info.col-12.col-md-7.col-lg-6.ofsset-0.offset-lg-2.offset-xl-3
 						+b.sec8-person
 							+e.name Abdullah Noman
 							+e.role Creative Director, Code Cafe

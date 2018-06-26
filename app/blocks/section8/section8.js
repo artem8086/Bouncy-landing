@@ -1,7 +1,7 @@
 import refreshProgressDiagrams from '../progress-diagramm/progress-diagramm';
 
 $(document).ready(function () {
-	$('.sec8-slider').slick({
+	$('.slider').slick({
 		dots: true,
 		dotsClass: 'slider__paging',
 		arrows: false,
