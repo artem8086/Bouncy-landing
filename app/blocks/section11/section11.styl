@@ -1,0 +1,79 @@
+.section11
+	background-color #f3f3f3
+	padding 80px 0 100px
+
+	&__header
+		text-align center
+		font-size 20px
+		padding-bottom 40px
+
+	&__desc
+		text-align center
+		padding-bottom 80px
+
+.sec11-order
+	display flex
+	flex-direction column
+	background-color main-color
+	padding 0
+	min-height 300px
+	margin-bottom 40px
+
+	&__title
+		text-align center
+		color main-color
+		font-size 20px
+		font-weight 700
+		letter-spacing .8px
+		text-transform uppercase
+		padding 25px 0
+		background-color #19bd9a
+		
+		&_but
+			position relative
+			display inline-block
+			font-size 16px
+			font-weight 400
+			line-height 16px
+			
+			&:hover
+				text-decoration none
+				color main-color
+				cursor pointer
+
+				&::after
+					transform translateX(5px)
+
+			&::after
+				content ''
+				display inline-block
+				position absolute
+				top 0
+				line-height 66px
+				font-family "Pe-icon-7-stroke"
+				font-size 30px
+				text-transform uppercase
+				letter-spacing 1.2px
+				transition transform .2s ease-in-out
+
+	&__info
+		color #81868e
+		padding 33px
+		font-size 14px
+		line-height 30px
+		letter-spacing 0.7px
+		
+	&__price
+		text-align center
+		color #1fbba6
+		font-family "Source Sans Pro"
+		font-size 42px
+		font-weight 900
+		margin-top auto
+
+	&__dur
+		text-align center
+		color #81868e
+		font-size 20px
+		letter-spacing 1px
+		margin-bottom auto
