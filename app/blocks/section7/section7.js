@@ -1,6 +1,7 @@
 $(document).ready(function () {
 	$('.sec7-slider').slick({
 		dots: true,
+		infinite: false,
 		appendDots: $('.sec7-selector'),
 		dotsClass: 'sec7-slider__paging',
 		arrows: false,

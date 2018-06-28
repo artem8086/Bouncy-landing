@@ -3,6 +3,7 @@ $(document).ready(function () {
 		dots: true,
 		dotsClass: 'slider__paging_vertical',
 		arrows: false,
+		infinite: false,
 		vertical: true,
 		verticalSwiping: true,
 		appendDots: $('.sec10-dots'),
