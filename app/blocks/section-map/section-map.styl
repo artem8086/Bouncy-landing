@@ -1,0 +1,25 @@
+.section-map
+	position relative
+	background-color #000
+	background-size cover
+	background-position center
+	padding 240px 0
+	display flex
+
+	&::before
+		@extends .before
+		background-color #000
+		opacity .85
+
+	&>div
+		width 100%
+		text-align center
+		z-index 1
+	
+	&__header
+		color main-color
+		font-size 16px
+		text-transform uppercase
+		line-height 18px
+		letter-spacing .8px
+		padding-right 16px
