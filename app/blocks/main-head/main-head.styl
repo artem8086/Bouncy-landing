@@ -36,6 +36,9 @@
 		text-transform uppercase
 
 #top-nav__toggle
+	position absolute
+	top 0
+	left 0
 	visibility hidden
 
 @media (min-width: 768px)
@@ -58,14 +61,14 @@
 			
 			&:hover
 				text-decoration none 
-				color gray-color
+				color #c3c3c3
 
 			&_active
 				border 1px solid main-color
 				border-radius 14px
 				
 				&:hover
-					border-color gray-color
+					border-color #c3c3c3
 
 @media (max-width: 768px)
 	$items = 6
@@ -208,6 +211,9 @@
 				background-color: main-color
 				transform: translateY(-50%) scaleY(5)
 				transition: $transition-duration
+			
+			&_active
+				text-decoration underline
 
 .main-content
 	&__header-text
