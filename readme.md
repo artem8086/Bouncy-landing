@@ -8,4 +8,4 @@
 
 Предпросмотр:
 
-![Шаблон](https://github.com/artem8086/Bouncy-landing/PSD/BOUNCY.png)
+![Шаблон](PSD/BOUNCY.png)
