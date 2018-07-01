@@ -16,9 +16,9 @@ $(document).ready(function () {
 	const activeClass = 'main-nav__link_active';
 
 	$(menuLink).on('click', function (event) {
-		console.log(this);
 		$(menuLink).removeClass(activeClass);
 		$(this).addClass(activeClass);
+		$('#top-nav__toggle').val(false);
 		smoothScroll.call(this, event);
 	});
 
